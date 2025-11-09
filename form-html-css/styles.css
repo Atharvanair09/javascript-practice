@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header-container {
+  text-align: center;
+  box-shadow: 1px 1px 10px rgb(30, 29, 29);
+  border-radius: 15px;
+}
+
+.logo {
+  margin-top: 10px;
+  border-radius: 25px;
+  width: 200px;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.form-container > b {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form-container > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+label {
+  font-style: 1rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+li {
+  margin-left: 15px;
+}
+
+input {
+  gap: 15px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+}
+
+.address-container {
+  margin-top: 20px;
+  display: flex;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+}
+
+select {
+  width: 200px;
+  height: 40px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+}
+
+.main-container {
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+button{
+    max-width: 100px;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 25px;
+    margin-top: 10px;
+    transition: 0.3s all ease-in;
+    font-size: medium;
+    font-weight: 700;
+}
+
+button:hover{
+    box-shadow: 0 0 10px rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+iframe{
+    margin-left: 10px;
+    width: 98%;
+    height: 440px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.image-iframe{
+    height: 494px;
+    width: 910px;
+    border: none;
+    margin-left: 250px;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  animation-play-state: running; /* Keep the animation running */
+}
+
+.marquee-content p {
+  padding: 0 20px;
+  /* Add other styling for your text or images here */
+}
+
+/* Define the keyframes for the animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0); /* Start position */
+  }
+  to {
+    transform: translateX(-50%); /* End position - moves one set of content off-screen */
+  }
+}

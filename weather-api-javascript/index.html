@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search city..." />
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="main-container" hidden>
+        <div id="location"><span>📍</span> New York, NY</div>
+        <div class="current-weather">
+          <div id="temp">24°</div>
+          <div id="desc"></div>
+          <!-- <div id="high-low"></div> -->
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <div>Wind</div>
+            <div id="wind">12 km/h</div>
+          </div>
+          <div class="stat">
+            <div>Humidity</div>
+            <div id="humidity">65%</div>
+          </div>
+          <div class="stat">
+            <div>Wind Degrees</div>
+            <div id="wind-degree">16 km</div>
+          </div>
+          <div class="stat">
+            <div>% of Cloud Cover</div>
+            <div id="cloud-cover">1013 hPa</div>
+          </div>
+        </div>
+        <div class="card hourly">
+          <div class="card-title">Hourly Forecast</div>
+          <div class="hour-row" id="hour-row">
+            <!-- <div class="hour-col">
+              <div class="hour-time">Now</div>
+              <div class="hour-temp" id="current-hour-temp">24°</div>
+              <div class="hour-icon">🌤️</div>
+              <div class="hour-chance" id="current-weather">10%</div>
+            </div> -->
+           
+            <!-- <div class="hour-col">
+              <div class="hour-time">2 PM</div>
+              <div class="hour-temp">28°</div>
+              <div class="hour-icon">☀️</div>
+              <div class="hour-chance">0%</div>
+            </div>
+            <div class="hour-col">
+              <div class="hour-time">3 PM</div>
+              <div class="hour-temp">27°</div>
+              <div class="hour-icon">🌤️</div>
+              <div class="hour-chance">15%</div>
+            </div> -->
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .bmi-container {
+    background: #fff;
+    padding: 28px 32px;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 320px;
+    width: 100%;
+  }
+  .bmi-container h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #333;
+  }
+  label {
+    display: block;
+    margin: 10px 0 4px;
+    color: #555;
+  }
+  /* Container for input + select side by side */
+  .input-unit-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  input[type="number"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+  }
+  button {
+    background: #3574f2;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button:hover {
+    background: #285dc0;
+  }
+  .result {
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 1.05em;
+    color: #252b36;
+    min-height: 1.5em;
+    background: #eef2fb;
+    border-radius: 3px;
+  }

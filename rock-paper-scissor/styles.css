@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.typewriter {
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Keep text in one line */
+  border-right: 0.15em solid orange; /* Creates the blinking cursor line */
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+  font-family: monospace;
+  font-size: 2rem;
+  width: 0; /* Start width for typing effect */
+}
+
+/* Typing animation: width grows from 0 to full content */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blinking animation */
+@keyframes blink {
+  0%,
+  100% {
+    border-color: orange;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* .container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  
+  h1 {
+    margin-bottom: 25px;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .choice {
+    background: #8e44ad;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    user-select: none;
+    width: 90px;
+  }
+  
+  .choice:hover {
+    background: #732d91;
+  }
+  
+  .result-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .result-display div {
+    width: 45%;
+  }
+  
+  .result-display h2 {
+    margin-bottom: 6px;
+    font-weight: normal;
+  }
+  
+  #player-choice, #computer-choice {
+    font-size: 2rem;
+    min-height: 40px;
+  }
+  
+  .game-result {
+    font-size: 1.4rem;
+    font-weight: bold;
+    min-height: 40px;
+  }
+x   */
